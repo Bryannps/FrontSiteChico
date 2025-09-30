@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { ChicoBotLogo } from './ChicoBotLogo';
 
 export const Header: React.FC = () => {
   return (
@@ -8,11 +9,16 @@ export const Header: React.FC = () => {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <div className="flex items-center">
-            <Link to="/" className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-gradient-to-r from-primary-500 to-primary-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">🤖</span>
+            <Link to="/" className="flex items-center space-x-3 group">
+              <ChicoBotLogo className="group-hover:scale-105 transition-transform duration-200" />
+              <div className="flex flex-col">
+                <span className="text-2xl font-bold text-gray-900 leading-tight group-hover:text-primary-600 transition-colors duration-200">
+                  ChicoBot
+                </span>
+                <span className="text-xs text-gray-500 -mt-1 group-hover:text-gray-600 transition-colors duration-200">
+                  Controle Financeiro Inteligente
+                </span>
               </div>
-              <span className="text-2xl font-bold text-gray-900">ChicoBot</span>
             </Link>
           </div>
 
