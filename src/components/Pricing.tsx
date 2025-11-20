@@ -15,60 +15,31 @@ export const Pricing: React.FC = () => {
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Plano Gratuito */}
-          <div className="bg-white border-2 border-gray-200 rounded-lg p-8">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">Gratuito</h3>
-            <div className="mb-6">
-              <span className="text-4xl font-bold text-primary-600">R$ 0</span>
-              <span className="text-gray-600">/mês</span>
-            </div>
-            <ul className="space-y-3 mb-8">
-              <li className="flex items-center">
-                <span className="text-green-500 mr-2">✓</span>
-                Até 50 transações/mês
-              </li>
-              <li className="flex items-center">
-                <span className="text-green-500 mr-2">✓</span>
-                3 categorias básicas
-              </li>
-              <li className="flex items-center">
-                <span className="text-green-500 mr-2">✓</span>
-                Relatórios simples
-              </li>
-              <li className="flex items-center">
-                <span className="text-green-500 mr-2">✓</span>
-                Suporte por email
-              </li>
-            </ul>
-            <Button variant="secondary" className="w-full">
-              Começar Grátis
-            </Button>
-          </div>
-          
-          {/* Plano Premium - Destaque */}
+
+          {/* Plano Mensal - Destaque */}
           <div className="bg-primary-50 border-2 border-primary-500 rounded-lg p-8 relative">
             <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
               <span className="bg-primary-500 text-white px-4 py-1 rounded-full text-sm font-semibold">
                 MAIS POPULAR
               </span>
             </div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">Premium</h3>
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">Mensal</h3>
             <div className="mb-6">
-              <span className="text-4xl font-bold text-primary-600">R$ 29</span>
+              <span className="text-4xl font-bold text-primary-600">R$ 30</span>
               <span className="text-gray-600">/mês</span>
             </div>
             <ul className="space-y-3 mb-8">
               <li className="flex items-center">
                 <span className="text-green-500 mr-2">✓</span>
-                Transações ilimitadas
+                Pedidos ilimitados
               </li>
               <li className="flex items-center">
                 <span className="text-green-500 mr-2">✓</span>
-                Categorias personalizadas
+                Pedidos simplificados por IA
               </li>
               <li className="flex items-center">
                 <span className="text-green-500 mr-2">✓</span>
-                Sincronização bancária
+                Dados salvos com segurança e anonimamente
               </li>
               <li className="flex items-center">
                 <span className="text-green-500 mr-2">✓</span>
@@ -80,46 +51,38 @@ export const Pricing: React.FC = () => {
               </li>
             </ul>
             <Button className="w-full">
-              Escolher Premium
+              Escolher Mensal
             </Button>
           </div>
           
-          {/* Plano Empresarial */}
+          {/* Plano Anual */}
           <div className="bg-white border-2 border-gray-200 rounded-lg p-8">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">Empresarial</h3>
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">Anual</h3>
             <div className="mb-6">
-              <span className="text-4xl font-bold text-primary-600">R$ 99</span>
+              <span className="text-4xl font-bold text-primary-600">R$ 200</span>
               <span className="text-gray-600">/mês</span>
             </div>
             <ul className="space-y-3 mb-8">
               <li className="flex items-center">
                 <span className="text-green-500 mr-2">✓</span>
-                Tudo do Premium
+                Tudo do mensal
               </li>
               <li className="flex items-center">
                 <span className="text-green-500 mr-2">✓</span>
-                Múltiplos usuários
+                Economia de 44%
               </li>
               <li className="flex items-center">
                 <span className="text-green-500 mr-2">✓</span>
-                API personalizada
-              </li>
-              <li className="flex items-center">
-                <span className="text-green-500 mr-2">✓</span>
-                Suporte prioritário
+                Acesso antecipado a novos recursos
               </li>
             </ul>
-            <Button variant="secondary" className="w-full">
-              Falar com Vendas
+            <Button className="w-full">
+              Escolher Anual
             </Button>
           </div>
         </div>
         
-        <div className="text-center mt-12">
-          <p className="text-gray-600">
-            💳 Todos os planos incluem 14 dias de teste grátis • Cancele a qualquer momento
-          </p>
-        </div>
+
       </div>
     </section>
   );

@@ -65,7 +65,7 @@ export const ApiTester: React.FC = () => {
       <div className="bg-yellow-50 border border-yellow-200 p-4 rounded-lg mb-6">
         <h3 className="font-semibold text-yellow-800 mb-2">⚠️ Antes de testar:</h3>
         <ol className="list-decimal list-inside text-yellow-700 space-y-1">
-          <li>Certifique-se de que sua API está rodando em <code>http://localhost:3000</code></li>
+          <li>Certifique-se de que sua API está rodando em <code>http://localhost:3002</code></li>
           <li>Configure o CORS para aceitar requisições do frontend</li>
           <li>Verifique se os endpoints estão funcionando</li>
         </ol>
